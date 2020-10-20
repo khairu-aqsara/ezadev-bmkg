@@ -1,0 +1,21 @@
+{
+    "name": "ezadev/bmkg",
+    "description": "Ambil Data Cuaca Dari BMKG",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^7.1@dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Khairu Aqsara",
+            "email": "khairu.aqsara@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload":{
+        "psr-4":{
+          "Ezadev\\Bmkg\\":"src/"
+        }
+    }
+}
