@@ -8,7 +8,7 @@ composer require ezadev/bmkg
 
 ### Penggunaan
 
-```
+```php
 use Ezadev\Bmkg\Cuaca;
 
 $cuaca = new Cuaca('Kalimantan Tengah');
