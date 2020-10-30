@@ -129,7 +129,7 @@ class Cuaca extends Daerah
                                         $except = ["Max temperature","Max humidity","Min temperature","Min humidity","Max temperature"];
                                         if(!in_array($data['@attributes']['description'], $except)){
                                             $new_data['cuaca'][$area['name'][1]][$data['@attributes']['description']][] = [
-                                                'jam'=>intval($timerange['@attributes']['h']),
+                                                'jam'=>$timerange['@attributes']['datetime'],
                                                 'value'=> ($data['@attributes']['description'] == "Weather") 
                                                     ? $this->kode_cuaca[$timerange['value']]
                                                     : $timerange['value']
